@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>FilmBundle</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="{{  asset('bundles/film/css/main.css')  }}" type="text/css" media="all" /> 
+	<link rel="stylesheet" href="{{  asset('bundles/film/css/style.css')  }}" type="text/css" media="screen" /> 
+	<script type="text/javascript" src="{{  asset('bundles/film/js/jquery.js')  }}"></script>
+	<script type="text/javascript" src="{{  asset('bundles/film/js/scripts.js')  }}"></script>		
+
+</head>
+<body>
+	<div id="page">    
+		<div id="mainheader">
+			
+			<div id="log">
+				<img src="{{  asset('bundles/film/images/logo.png')  }}" alt="FilmBundle" width="128" height="128" />
+			</div>
+			<div style="background-color:#dddddd">
+				<center>
+					<b><font color="#FF0000">Bienvenue sur notre site ,le but et des pouvoir ajouter tous les acteurs dont vous êtes fan ... </font></b>
+				</center>
+			</div>
+			<ul id="menu">
+				<li><a href="{{  path('film')  }}">Accueil</a></li>		    
+				<li><a href="{{  path('acteur')  }}">Acteurs</a></li>                   
+			</ul>
+		</div>
+		<div id="content">
+			{%block body%}
+			<div id="header">
+				<div class="wrap">
+					<div id="slide-holder">
+						<div id="slide-runner">
+							<a href=""><img id="slide-img-1" src="{{  asset('bundles/film/images/7.jpg')  }}" class="slide" alt="" /></a>
+							<a href=""><img id="slide-img-2" src="{{  asset('bundles/film/images/1.jpg')  }}" class="slide" alt="" /></a>
+							<a href=""><img id="slide-img-3" src="{{  asset('bundles/film/images/2.jpg')  }}" class="slide" alt="" /></a>
+							<a href=""><img id="slide-img-4" src="{{  asset('bundles/film/images/3.jpg')  }}" class="slide" alt="" /></a>
+							<a href=""><img id="slide-img-5" src="{{  asset('bundles/film/images/4.jpg')  }}" class="slide" alt="" /></a>
+							<a href=""><img id="slide-img-6" src="{{  asset('bundles/film/images/5.jpg')  }}" class="slide" alt="" /></a>
+							<a href=""><img id="slide-img-7" src="{{  asset('bundles/film/images/6.jpg')  }}" class="slide" alt="" /></a> 
+							<div id="slide-controls">
+								<p id="slide-client" class="text"><strong>post: </strong><span></span></p>
+								<p id="slide-desc" class="text"></p>
+								<p id="slide-nav"></p>
+							</div>
+						</div>				
+						<!--content featured gallery here -->				
+						<script type="text/javascript">
+						if(!window.slider) var slider={};slider.data=[{"id":"slide-img-1","client":"Greys Anatomy","desc":"TV shows"},{"id":"slide-img-2","client":"The Middle","desc":"TV Shows"},{"id":"slide-img-3","client":"Criminal Minds","desc":"aTV Shows"},{"id":"slide-img-4","client":"NCIS","desc":"TV Shows"},{"id":"slide-img-5","client":"Supernatural","desc":"TV Shows"},{"id":"slide-img-6","client":"Bones","desc":"TV shows"},{"id":"slide-img-7","client":"Survivor","desc":"Reality Show"}];
+						</script>
+					</div>
+				</div>
+			</div>
+			{% endblock %}
+		</div>
+
+		<footer id="footer">                
+			<div class="foot">
+				<h4>Notre Site</h4>
+				<p>Adresse :91 avnue Maurice Thorez Ivry-sur-Seine </p>
+			</div>
+
+			<div class="foot">
+				<h4>Nous contacter</h4>
+				<p>Tel: 06 20 76 74 86 </p>
+
+			</div>
+
+			<div class="foot">
+				<h4>Social</h4>   
+				<p>Facebook:Bouida Mehdy et Kevin Jum's </p>							
+
+			</div> 
+
+			<div class="clear"></div>
+
+		</div>
+	</footer>	
+</div>
+
+</body>
+</html>
+
