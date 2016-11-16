@@ -21,24 +21,24 @@ class __TwigTemplate_26a1ccbe3cef6a796cda4c6f1f324eafaccca4bc077cfa969489f56afb3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8a275bc8734d748c8140acfcd0a3bb29635e348a7499258baae365bee3fa4441 = $this->env->getExtension("native_profiler");
-        $__internal_8a275bc8734d748c8140acfcd0a3bb29635e348a7499258baae365bee3fa4441->enter($__internal_8a275bc8734d748c8140acfcd0a3bb29635e348a7499258baae365bee3fa4441_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FilmBundle:Acteur:acteur.html.twig"));
+        $__internal_f5850931caf8bb309ccdadbd6e53e8d461df3a46ca64cc2b8e519f7929d7da0d = $this->env->getExtension("native_profiler");
+        $__internal_f5850931caf8bb309ccdadbd6e53e8d461df3a46ca64cc2b8e519f7929d7da0d->enter($__internal_f5850931caf8bb309ccdadbd6e53e8d461df3a46ca64cc2b8e519f7929d7da0d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FilmBundle:Acteur:acteur.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_8a275bc8734d748c8140acfcd0a3bb29635e348a7499258baae365bee3fa4441->leave($__internal_8a275bc8734d748c8140acfcd0a3bb29635e348a7499258baae365bee3fa4441_prof);
+        $__internal_f5850931caf8bb309ccdadbd6e53e8d461df3a46ca64cc2b8e519f7929d7da0d->leave($__internal_f5850931caf8bb309ccdadbd6e53e8d461df3a46ca64cc2b8e519f7929d7da0d_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_4b7db794989b87e625a0d03339fd4ea07c3fc92845969cd542627db5d658906b = $this->env->getExtension("native_profiler");
-        $__internal_4b7db794989b87e625a0d03339fd4ea07c3fc92845969cd542627db5d658906b->enter($__internal_4b7db794989b87e625a0d03339fd4ea07c3fc92845969cd542627db5d658906b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_f5d9d7e55522e47016ca51f28f343fcdf7bdad4cbce23e7844b0b3fc3fedfa3b = $this->env->getExtension("native_profiler");
+        $__internal_f5d9d7e55522e47016ca51f28f343fcdf7bdad4cbce23e7844b0b3fc3fedfa3b->enter($__internal_f5d9d7e55522e47016ca51f28f343fcdf7bdad4cbce23e7844b0b3fc3fedfa3b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "<div>
-   <p><Font-Weight: Bold>Voici une liste comprenant des acteurs, à vous de la modifier selon vôtre convenance!</Font></p>
+   <p>Voici une liste comprenant des acteurs, à vous de la modifier selon vôtre convenance! </p>
 </div>
 <table width=\"60%\">
 \t<caption><h1>Liste des Acteurs</h1></caption>
@@ -116,7 +116,7 @@ class __TwigTemplate_26a1ccbe3cef6a796cda4c6f1f324eafaccca4bc077cfa969489f56afb3
         echo " \">Ajouter un Nouveau Acteur</a>
 ";
         
-        $__internal_4b7db794989b87e625a0d03339fd4ea07c3fc92845969cd542627db5d658906b->leave($__internal_4b7db794989b87e625a0d03339fd4ea07c3fc92845969cd542627db5d658906b_prof);
+        $__internal_f5d9d7e55522e47016ca51f28f343fcdf7bdad4cbce23e7844b0b3fc3fedfa3b->leave($__internal_f5d9d7e55522e47016ca51f28f343fcdf7bdad4cbce23e7844b0b3fc3fedfa3b_prof);
 
     }
 
@@ -138,7 +138,7 @@ class __TwigTemplate_26a1ccbe3cef6a796cda4c6f1f324eafaccca4bc077cfa969489f56afb3
 /* {% extends 'FilmBundle::index.html.twig' %}*/
 /* {%block body%}*/
 /* <div>*/
-/*    <p><Font-Weight: Bold>Voici une liste comprenant des acteurs, à vous de la modifier selon vôtre convenance!</Font></p>*/
+/*    <p>Voici une liste comprenant des acteurs, à vous de la modifier selon vôtre convenance! </p>*/
 /* </div>*/
 /* <table width="60%">*/
 /* 	<caption><h1>Liste des Acteurs</h1></caption>*/

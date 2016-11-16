@@ -16,8 +16,8 @@ class __TwigTemplate_a15b618f2e3bc8f3814e37efca9244c9f044af1055faaf148437e6a6481
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8f5c6da80b14b03b1580b727c4f209cbd1f101159cbddf19ccdd13661776f8c3 = $this->env->getExtension("native_profiler");
-        $__internal_8f5c6da80b14b03b1580b727c4f209cbd1f101159cbddf19ccdd13661776f8c3->enter($__internal_8f5c6da80b14b03b1580b727c4f209cbd1f101159cbddf19ccdd13661776f8c3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FilmBundle::index.html.twig"));
+        $__internal_d2ceae1e7857e39bdc2dd5f3962ae7159d85079453da431bffe8bc017524ac4d = $this->env->getExtension("native_profiler");
+        $__internal_d2ceae1e7857e39bdc2dd5f3962ae7159d85079453da431bffe8bc017524ac4d->enter($__internal_d2ceae1e7857e39bdc2dd5f3962ae7159d85079453da431bffe8bc017524ac4d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FilmBundle::index.html.twig"));
 
         // line 1
         echo "<html>
@@ -106,15 +106,15 @@ class __TwigTemplate_a15b618f2e3bc8f3814e37efca9244c9f044af1055faaf148437e6a6481
 
 ";
         
-        $__internal_8f5c6da80b14b03b1580b727c4f209cbd1f101159cbddf19ccdd13661776f8c3->leave($__internal_8f5c6da80b14b03b1580b727c4f209cbd1f101159cbddf19ccdd13661776f8c3_prof);
+        $__internal_d2ceae1e7857e39bdc2dd5f3962ae7159d85079453da431bffe8bc017524ac4d->leave($__internal_d2ceae1e7857e39bdc2dd5f3962ae7159d85079453da431bffe8bc017524ac4d_prof);
 
     }
 
     // line 31
     public function block_body($context, array $blocks = array())
     {
-        $__internal_69eba9899967f886b46aab5abd25b5fbc807cba2dfbaecabd634790215ebf476 = $this->env->getExtension("native_profiler");
-        $__internal_69eba9899967f886b46aab5abd25b5fbc807cba2dfbaecabd634790215ebf476->enter($__internal_69eba9899967f886b46aab5abd25b5fbc807cba2dfbaecabd634790215ebf476_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_8a1392549a0b6f04dde1421836c60442a3791e57cf08fb6ea7a58f5c72d92d62 = $this->env->getExtension("native_profiler");
+        $__internal_8a1392549a0b6f04dde1421836c60442a3791e57cf08fb6ea7a58f5c72d92d62->enter($__internal_8a1392549a0b6f04dde1421836c60442a3791e57cf08fb6ea7a58f5c72d92d62_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 32
         echo "\t\t\t<div id=\"header\">
@@ -155,7 +155,7 @@ class __TwigTemplate_a15b618f2e3bc8f3814e37efca9244c9f044af1055faaf148437e6a6481
 \t\t\t\t\t\t\t\t<p id=\"slide-nav\"></p>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>\t\t\t\t
-\t\t\t\t\t\t<!--content featured gallery here -->\t\t\t\t
+\t\t\t\t\t\t<!-- au sujet de la gallerie -->\t\t\t\t
 \t\t\t\t\t\t<script type=\"text/javascript\">
 \t\t\t\t\t\tif(!window.slider) var slider={};slider.data=[{\"id\":\"slide-img-1\",\"client\":\"Meagan Good\",\"desc\":\"Actrice\"},{\"id\":\"slide-img-2\",\"client\":\"Terrence Howard\",\"desc\":\"Acteur\"},{\"id\":\"slide-img-3\",\"client\":\"Sofia Vergara\",\"desc\":\"Actrice\"},{\"id\":\"slide-img-4\",\"client\":\"Jason Statham\",\"desc\":\"Acteur\"},{\"id\":\"slide-img-5\",\"client\":\"Blake Lively\",\"desc\":\"Acteur\"},{\"id\":\"slide-img-6\",\"client\":\"Georges Clooney\",\"desc\":\"Acteur\"},{\"id\":\"slide-img-7\",\"client\":\"Adele Exarchopoulos\",\"desc\":\"Actrice\"}];
 \t\t\t\t\t\t</script>
@@ -164,7 +164,7 @@ class __TwigTemplate_a15b618f2e3bc8f3814e37efca9244c9f044af1055faaf148437e6a6481
 \t\t\t</div>
 \t\t\t";
         
-        $__internal_69eba9899967f886b46aab5abd25b5fbc807cba2dfbaecabd634790215ebf476->leave($__internal_69eba9899967f886b46aab5abd25b5fbc807cba2dfbaecabd634790215ebf476_prof);
+        $__internal_8a1392549a0b6f04dde1421836c60442a3791e57cf08fb6ea7a58f5c72d92d62->leave($__internal_8a1392549a0b6f04dde1421836c60442a3791e57cf08fb6ea7a58f5c72d92d62_prof);
 
     }
 
@@ -231,7 +231,7 @@ class __TwigTemplate_a15b618f2e3bc8f3814e37efca9244c9f044af1055faaf148437e6a6481
 /* 								<p id="slide-nav"></p>*/
 /* 							</div>*/
 /* 						</div>				*/
-/* 						<!--content featured gallery here -->				*/
+/* 						<!-- au sujet de la gallerie -->				*/
 /* 						<script type="text/javascript">*/
 /* 						if(!window.slider) var slider={};slider.data=[{"id":"slide-img-1","client":"Meagan Good","desc":"Actrice"},{"id":"slide-img-2","client":"Terrence Howard","desc":"Acteur"},{"id":"slide-img-3","client":"Sofia Vergara","desc":"Actrice"},{"id":"slide-img-4","client":"Jason Statham","desc":"Acteur"},{"id":"slide-img-5","client":"Blake Lively","desc":"Acteur"},{"id":"slide-img-6","client":"Georges Clooney","desc":"Acteur"},{"id":"slide-img-7","client":"Adele Exarchopoulos","desc":"Actrice"}];*/
 /* 						</script>*/
