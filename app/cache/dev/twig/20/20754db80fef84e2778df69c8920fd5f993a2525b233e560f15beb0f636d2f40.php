@@ -21,20 +21,20 @@ class __TwigTemplate_64e3b397a3126fab122adc736f207af7b18e63c169581c873a8df710c8b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3a9e853ddb031084fc0b961196c82d419e682de60c7a21f9f57cbb78e80ffd4e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3a9e853ddb031084fc0b961196c82d419e682de60c7a21f9f57cbb78e80ffd4e->enter($__internal_3a9e853ddb031084fc0b961196c82d419e682de60c7a21f9f57cbb78e80ffd4e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FilmBundle:Acteur:acteur.html.twig"));
+        $__internal_cd404ed5da455d59b086f8238dff9cb4db217a45b6d6128cdf3de2d9ed8b2b18 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cd404ed5da455d59b086f8238dff9cb4db217a45b6d6128cdf3de2d9ed8b2b18->enter($__internal_cd404ed5da455d59b086f8238dff9cb4db217a45b6d6128cdf3de2d9ed8b2b18_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FilmBundle:Acteur:acteur.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3a9e853ddb031084fc0b961196c82d419e682de60c7a21f9f57cbb78e80ffd4e->leave($__internal_3a9e853ddb031084fc0b961196c82d419e682de60c7a21f9f57cbb78e80ffd4e_prof);
+        $__internal_cd404ed5da455d59b086f8238dff9cb4db217a45b6d6128cdf3de2d9ed8b2b18->leave($__internal_cd404ed5da455d59b086f8238dff9cb4db217a45b6d6128cdf3de2d9ed8b2b18_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_14a65c0459f5e8f0aedfc6d6a373505ec5def10e4a9aabe644d42ce8289f07e8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_14a65c0459f5e8f0aedfc6d6a373505ec5def10e4a9aabe644d42ce8289f07e8->enter($__internal_14a65c0459f5e8f0aedfc6d6a373505ec5def10e4a9aabe644d42ce8289f07e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_059ea4f738465502fbfaa333cf3da631ec76f5314abe74b6c8f5f32a16da3d82 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_059ea4f738465502fbfaa333cf3da631ec76f5314abe74b6c8f5f32a16da3d82->enter($__internal_059ea4f738465502fbfaa333cf3da631ec76f5314abe74b6c8f5f32a16da3d82_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "<div>
@@ -116,7 +116,7 @@ class __TwigTemplate_64e3b397a3126fab122adc736f207af7b18e63c169581c873a8df710c8b
         echo " \">Ajouter un Nouveau Acteur</a>
 ";
         
-        $__internal_14a65c0459f5e8f0aedfc6d6a373505ec5def10e4a9aabe644d42ce8289f07e8->leave($__internal_14a65c0459f5e8f0aedfc6d6a373505ec5def10e4a9aabe644d42ce8289f07e8_prof);
+        $__internal_059ea4f738465502fbfaa333cf3da631ec76f5314abe74b6c8f5f32a16da3d82->leave($__internal_059ea4f738465502fbfaa333cf3da631ec76f5314abe74b6c8f5f32a16da3d82_prof);
 
     }
 
