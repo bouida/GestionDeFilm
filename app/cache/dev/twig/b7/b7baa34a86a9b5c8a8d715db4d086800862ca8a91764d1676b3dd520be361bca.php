@@ -15,8 +15,8 @@ class __TwigTemplate_aa39e3c8de53e79f4f19d8eac4aaa1e92b444b4fc29a7b8568fb5bdd2f9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ea4b020b0f365786fd36fea006c4c3fe2cdc8203dceaed4efbb275b905760cc0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ea4b020b0f365786fd36fea006c4c3fe2cdc8203dceaed4efbb275b905760cc0->enter($__internal_ea4b020b0f365786fd36fea006c4c3fe2cdc8203dceaed4efbb275b905760cc0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:error.txt.twig"));
+        $__internal_e93862d27f52c5acaba89597c0b1647083339f5191ff657131c411fb25a076e2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e93862d27f52c5acaba89597c0b1647083339f5191ff657131c411fb25a076e2->enter($__internal_e93862d27f52c5acaba89597c0b1647083339f5191ff657131c411fb25a076e2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:error.txt.twig"));
 
         // line 1
         echo "Oops! An Error Occurred
@@ -33,7 +33,7 @@ Something is broken. Please let us know what you were doing when this error occu
 We will fix it as soon as possible. Sorry for any inconvenience caused.
 ";
         
-        $__internal_ea4b020b0f365786fd36fea006c4c3fe2cdc8203dceaed4efbb275b905760cc0->leave($__internal_ea4b020b0f365786fd36fea006c4c3fe2cdc8203dceaed4efbb275b905760cc0_prof);
+        $__internal_e93862d27f52c5acaba89597c0b1647083339f5191ff657131c411fb25a076e2->leave($__internal_e93862d27f52c5acaba89597c0b1647083339f5191ff657131c411fb25a076e2_prof);
 
     }
 

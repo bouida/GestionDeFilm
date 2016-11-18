@@ -18,11 +18,11 @@
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="AppBundle">AppBundle\AppBundle</parameter>
       <parameter key="FilmBundle">FilmBundle\FilmBundle</parameter>
-      <parameter key="CoreSphereConsoleBundle">CoreSphere\ConsoleBundle\CoreSphereConsoleBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
+      <parameter key="CoreSphereConsoleBundle">CoreSphere\ConsoleBundle\CoreSphereConsoleBundle</parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
@@ -619,13 +619,13 @@
         <parameter>security</parameter>
         <parameter>@Security/Collector/security.html.twig</parameter>
       </parameter>
-      <parameter key="coresphere_console.toolbar" type="collection">
-        <parameter>coresphere_console</parameter>
-        <parameter>CoreSphereConsoleBundle:Toolbar:toolbar</parameter>
-      </parameter>
       <parameter key="data_collector.dump" type="collection">
         <parameter>dump</parameter>
         <parameter>@Debug/Profiler/dump.html.twig</parameter>
+      </parameter>
+      <parameter key="coresphere_console.toolbar" type="collection">
+        <parameter>coresphere_console</parameter>
+        <parameter>CoreSphereConsoleBundle:Toolbar:toolbar</parameter>
       </parameter>
     </parameter>
     <parameter key="console.command.ids" type="collection">
@@ -1481,10 +1481,10 @@
         </argument>
       </call>
       <call method="add">
-        <argument type="service" id="coresphere_console.toolbar"/>
+        <argument type="service" id="data_collector.dump"/>
       </call>
       <call method="add">
-        <argument type="service" id="data_collector.dump"/>
+        <argument type="service" id="coresphere_console.toolbar"/>
       </call>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
@@ -1771,7 +1771,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>582f0d17aeb608.53672111</argument>
+            <argument>582f0e71dcaa56.29613273</argument>
           </service>
         </argument>
       </argument>
@@ -1894,7 +1894,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>582f0d17aeb608.53672111</argument>
+            <argument>582f0e71dcaa56.29613273</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2533,27 +2533,6 @@
       <argument type="service" id="security.token_storage" on-invalid="null"/>
       <argument type="service" id="security.authorization_checker" on-invalid="null"/>
     </service>
-    <service id="coresphere_console.controller" class="CoreSphere\ConsoleBundle\Controller\ConsoleController">
-      <argument type="service" id="templating"/>
-      <argument type="service" id="coresphere_console.executer"/>
-      <argument type="service" id="coresphere_console.application"/>
-      <argument>dev</argument>
-    </service>
-    <service id="coresphere_console.executer" class="CoreSphere\ConsoleBundle\Executer\CommandExecuter">
-      <argument type="service" id="kernel"/>
-    </service>
-    <service id="coresphere_console.routing" class="CoreSphere\ConsoleBundle\Routing\Loader">
-      <tag name="routing.loader"/>
-      <argument type="service" id="routing.loader.yml"/>
-    </service>
-    <service id="coresphere_console.toolbar" class="CoreSphere\ConsoleBundle\DataCollector\DataCollector">
-      <tag name="data_collector" template="CoreSphereConsoleBundle:Toolbar:toolbar" id="coresphere_console"/>
-    </service>
-    <service id="coresphere_console.application.factory" class="CoreSphere\ConsoleBundle\Console\ApplicationFactory"/>
-    <service id="coresphere_console.application" class="Symfony\Bundle\FrameworkBundle\Console\Application">
-      <argument type="service" id="kernel"/>
-      <factory service="coresphere_console.application.factory" method="create"/>
-    </service>
     <service id="data_collector.dump" class="Symfony\Component\HttpKernel\DataCollector\DumpDataCollector">
       <tag name="data_collector" id="dump" template="@Debug/Profiler/dump.html.twig"/>
       <argument type="service" id="debug.stopwatch" on-invalid="ignore"/>
@@ -2640,13 +2619,13 @@
           <argument>security</argument>
           <argument>@Security/Collector/security.html.twig</argument>
         </argument>
-        <argument key="coresphere_console.toolbar" type="collection">
-          <argument>coresphere_console</argument>
-          <argument>CoreSphereConsoleBundle:Toolbar:toolbar</argument>
-        </argument>
         <argument key="data_collector.dump" type="collection">
           <argument>dump</argument>
           <argument>@Debug/Profiler/dump.html.twig</argument>
+        </argument>
+        <argument key="coresphere_console.toolbar" type="collection">
+          <argument>coresphere_console</argument>
+          <argument>CoreSphereConsoleBundle:Toolbar:toolbar</argument>
         </argument>
       </argument>
       <argument>bottom</argument>
@@ -2693,6 +2672,27 @@
     <service id="sensio_distribution.security_checker.command" class="SensioLabs\Security\Command\SecurityCheckerCommand">
       <tag name="console.command"/>
       <argument type="service" id="sensio_distribution.security_checker"/>
+    </service>
+    <service id="coresphere_console.controller" class="CoreSphere\ConsoleBundle\Controller\ConsoleController">
+      <argument type="service" id="templating"/>
+      <argument type="service" id="coresphere_console.executer"/>
+      <argument type="service" id="coresphere_console.application"/>
+      <argument>dev</argument>
+    </service>
+    <service id="coresphere_console.executer" class="CoreSphere\ConsoleBundle\Executer\CommandExecuter">
+      <argument type="service" id="kernel"/>
+    </service>
+    <service id="coresphere_console.routing" class="CoreSphere\ConsoleBundle\Routing\Loader">
+      <tag name="routing.loader"/>
+      <argument type="service" id="routing.loader.yml"/>
+    </service>
+    <service id="coresphere_console.toolbar" class="CoreSphere\ConsoleBundle\DataCollector\DataCollector">
+      <tag name="data_collector" template="CoreSphereConsoleBundle:Toolbar:toolbar" id="coresphere_console"/>
+    </service>
+    <service id="coresphere_console.application.factory" class="CoreSphere\ConsoleBundle\Console\ApplicationFactory"/>
+    <service id="coresphere_console.application" class="Symfony\Bundle\FrameworkBundle\Console\Application">
+      <argument type="service" id="kernel"/>
+      <factory service="coresphere_console.application.factory" method="create"/>
     </service>
     <service id="monolog.logger.request" class="Symfony\Bridge\Monolog\Logger">
       <argument>request</argument>
@@ -2861,10 +2861,6 @@
         <argument>Film</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\GestionDeFilm\vendor\coresphere\console-bundle/Resources/views</argument>
-        <argument>CoreSphereConsole</argument>
-      </call>
-      <call method="addPath">
         <argument>C:\wamp\www\GestionDeFilm\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
@@ -2875,6 +2871,10 @@
       <call method="addPath">
         <argument>C:\wamp\www\GestionDeFilm\vendor\sensio\distribution-bundle\Sensio\Bundle\DistributionBundle/Resources/views</argument>
         <argument>SensioDistribution</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\wamp\www\GestionDeFilm\vendor\coresphere\console-bundle/Resources/views</argument>
+        <argument>CoreSphereConsole</argument>
       </call>
       <call method="addPath">
         <argument>C:\wamp\www\GestionDeFilm\app/Resources/views</argument>

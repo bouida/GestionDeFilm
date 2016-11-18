@@ -18,7 +18,6 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
             new FilmBundle\FilmBundle(),
-            new CoreSphere\ConsoleBundle\CoreSphereConsoleBundle(),
             new Symfony\Bundle\DebugBundle\DebugBundle(),
             new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle()
         );
@@ -27,6 +26,7 @@ class AppKernel extends Kernel
     
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+            $bundles[] = new CoreSphere\ConsoleBundle\CoreSphereConsoleBundle();
            
         }
 
