@@ -1,4 +1,6 @@
-56258e,::1,POST,http://localhost/GestionDeFilm/web/app_dev.php/_console/_console/commands,1479412108,,200
-5ca054,::1,POST,http://localhost/GestionDeFilm/web/app_dev.php/_console/_console/commands,1479412192,,200
-2bf58c,::1,POST,http://localhost/GestionDeFilm/web/app_dev.php/_console/_console/commands,1479418297,,200
-0e7963,::1,POST,http://localhost/GestionDeFilm/web/app_dev.php/_console/_console/commands,1479418310,,200
+17095d,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/,1479465272,,200
+f60dbf,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur,1479465296,,200
+980542,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/,1479465296,,200
+c5b41d,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur,1479465299,,200
+81073f,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur,1479465371,,200
+815b4a,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/,1479465375,,200

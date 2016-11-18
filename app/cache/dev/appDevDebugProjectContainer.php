@@ -136,7 +136,6 @@ class appDevDebugProjectContainer extends Container
             'logger' => 'getLoggerService',
             'monolog.handler.console' => 'getMonolog_Handler_ConsoleService',
             'monolog.handler.console_very_verbose' => 'getMonolog_Handler_ConsoleVeryVerboseService',
-            'monolog.handler.debug' => 'getMonolog_Handler_DebugService',
             'monolog.handler.main' => 'getMonolog_Handler_MainService',
             'monolog.handler.null_internal' => 'getMonolog_Handler_NullInternalService',
             'monolog.logger.assetic' => 'getMonolog_Logger_AsseticService',
@@ -1633,7 +1632,6 @@ class appDevDebugProjectContainer extends Container
         $instance->useMicrosecondTimestamps(true);
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1670,19 +1668,6 @@ class appDevDebugProjectContainer extends Container
         $instance->pushProcessor($this->get('monolog.processor.psr_log_message'));
 
         return $instance;
-    }
-
-    /**
-     * Gets the 'monolog.handler.debug' service.
-     *
-     * This service is shared.
-     * This method always returns the same instance of the service.
-     *
-     * @return \Symfony\Bridge\Monolog\Handler\DebugHandler A Symfony\Bridge\Monolog\Handler\DebugHandler instance
-     */
-    protected function getMonolog_Handler_DebugService()
-    {
-        return $this->services['monolog.handler.debug'] = new \Symfony\Bridge\Monolog\Handler\DebugHandler(100, true);
     }
 
     /**
@@ -1729,7 +1714,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1748,7 +1732,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console_very_verbose'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1767,7 +1750,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1786,7 +1768,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1805,7 +1786,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1824,7 +1804,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1843,7 +1822,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1862,7 +1840,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1881,7 +1858,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -1900,7 +1876,6 @@ class appDevDebugProjectContainer extends Container
 
         $instance->pushHandler($this->get('monolog.handler.console'));
         $instance->pushHandler($this->get('monolog.handler.main'));
-        $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
     }
@@ -2180,7 +2155,7 @@ class appDevDebugProjectContainer extends Container
 
         $e = new \Symfony\Component\Security\Http\AccessMap();
 
-        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($e, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => new \Symfony\Component\Security\Core\User\InMemoryUserProvider()), 'main', $a, $this->get('debug.event_dispatcher', ContainerInterface::NULL_ON_INVALID_REFERENCE)), 2 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '582e097c8ccb48.21195620', $a, $c), 3 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $e, $c)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), new \Symfony\Component\Security\Http\HttpUtils($d, $d), 'main', NULL, NULL, NULL, $a, false));
+        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($e, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => new \Symfony\Component\Security\Core\User\InMemoryUserProvider()), 'main', $a, $this->get('debug.event_dispatcher', ContainerInterface::NULL_ON_INVALID_REFERENCE)), 2 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '582ed8a00df384.43310549', $a, $c), 3 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $e, $c)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), new \Symfony\Component\Security\Http\HttpUtils($d, $d), 'main', NULL, NULL, NULL, $a, false));
     }
 
     /**
@@ -3593,7 +3568,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSecurity_Authentication_ManagerService()
     {
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('582e097c8ccb48.21195620')), true);
+        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('582ed8a00df384.43310549')), true);
 
         $instance->setEventDispatcher($this->get('debug.event_dispatcher'));
 
@@ -4204,8 +4179,8 @@ class appDevDebugProjectContainer extends Container
             ),
             'assetic.java.bin' => 'C:\\ProgramData\\Oracle\\Java\\javapath\\java.EXE',
             'assetic.node.bin' => '/usr/bin/node',
-            'assetic.ruby.bin' => '/usr/bin/ruby',
-            'assetic.sass.bin' => '/usr/bin/sass',
+            'assetic.ruby.bin' => 'C:\\RailsInstaller\\Ruby2.1.0\\bin\\ruby.EXE',
+            'assetic.sass.bin' => 'C:\\RailsInstaller\\Ruby2.1.0\\bin\\sass.BAT',
             'assetic.reactjsx.bin' => '/usr/bin/jsx',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.twig_extension.functions' => array(
