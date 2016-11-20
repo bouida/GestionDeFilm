@@ -6,3 +6,4 @@ dcfa4a,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur,1479668335,
 1a7986,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur/ajout,1479668366,,200
 f25898,::1,POST,http://localhost/GestionDeFilm/web/app_dev.php/acteur/ajout,1479668437,,302
 466cb7,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur,1479668438,,200
+6834d8,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/,1479671351,,200
