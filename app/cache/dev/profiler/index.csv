@@ -1,9 +1,0 @@
-220eeb,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/,1479661162,,200
-550bdf,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur,1479661168,,200
-7602c5,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur/ajout,1479661176,,200
-a1b2d6,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur/ajout,1479661190,,200
-0745cd,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur,1479661196,,200
-8e88de,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur/modif/4,1479661201,,200
-6c3c45,::1,POST,http://localhost/GestionDeFilm/web/app_dev.php/acteur/modif/4,1479661221,,302
-2d7730,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur,1479661222,,200
-9e3a15,::1,GET,http://localhost/GestionDeFilm/web/app_dev.php/acteur,1479661641,,200
