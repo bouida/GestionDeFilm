@@ -15,8 +15,8 @@ class __TwigTemplate_2befa999b39c0a149518d3adb1d684eaa6434dd094f1b5c385428ad4d71
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7857c5d216697b84df2573a2f327378e612146805d0e82f1738ec7eebf64c55f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7857c5d216697b84df2573a2f327378e612146805d0e82f1738ec7eebf64c55f->enter($__internal_7857c5d216697b84df2573a2f327378e612146805d0e82f1738ec7eebf64c55f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CoreSphereConsoleBundle:Console:htmlTemplates.html.twig"));
+        $__internal_8c26efb160e502238327c7ee69ab4029cc6f8d3977565fc6974681c2afd55672 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8c26efb160e502238327c7ee69ab4029cc6f8d3977565fc6974681c2afd55672->enter($__internal_8c26efb160e502238327c7ee69ab4029cc6f8d3977565fc6974681c2afd55672_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CoreSphereConsoleBundle:Console:htmlTemplates.html.twig"));
 
         // line 1
         echo "<script type=\"text/html\" id=\"template_console_command\">
@@ -62,7 +62,7 @@ class __TwigTemplate_2befa999b39c0a149518d3adb1d684eaa6434dd094f1b5c385428ad4d71
 </script>
 ";
         
-        $__internal_7857c5d216697b84df2573a2f327378e612146805d0e82f1738ec7eebf64c55f->leave($__internal_7857c5d216697b84df2573a2f327378e612146805d0e82f1738ec7eebf64c55f_prof);
+        $__internal_8c26efb160e502238327c7ee69ab4029cc6f8d3977565fc6974681c2afd55672->leave($__internal_8c26efb160e502238327c7ee69ab4029cc6f8d3977565fc6974681c2afd55672_prof);
 
     }
 
