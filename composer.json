@@ -49,11 +49,7 @@
                             "symfony-web-dir": "web",
                             "symfony-assets-install": "relative",
                             "incenteev-parameters": {
-                                "file": "app/config/parameters.yml",
-                                "env-map": {
-                                    "database_url": "heroku_db7c57871721297",
-                                    "monolog_action_level": "LOG_LEVEL"
-                                }
+                                "file": "app/config/parameters.yml"
                                 },
                                 "branch-alias": {
                                     "dev-master": "2.7-dev"
